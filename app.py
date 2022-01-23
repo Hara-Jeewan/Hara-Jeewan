@@ -221,5 +221,5 @@ def forms():
      chemical=chemical, diseases=diseases,symptoms=symptoms)
 
 
-app.run(port=5000,debug=True,host='localhost')    
+app.run(port=5000,debug=True,host='0.0.0.0')    
 
