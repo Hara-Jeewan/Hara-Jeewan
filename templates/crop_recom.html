@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crop-rem.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Document</title>
+<style>
+.body{
+    margin:0 0;
+   
+}
+.crop-rem{
+    display:flex;
+}
+.left-crop-rem{
+  
+    backdrop-filter: blur(16px) saturate(180%);
+   background-image: url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    margin-left:1rem;
+    width:40%;
+    height:100vh;
+    font-size: 3rem;
+    text-align: center;
+    /* justify-content: center; */
+    border-radius: 12px;
+}
+.left-crop-rem h3{
+    font-size:1.5rem;
+}
+.right-crop-rem{
+    width:60%;
+    text-align: center;
+    color: green;
+
+}
+.submit-btn1{
+width: 70%;
+padding: 1rem;
+border-radius:8px;
+border:3px solid green;
+background:white
+}
+
+.crop-rem-para{
+    
+    color:white;
+    margin-top: 20%;
+    text-align:left;
+    margin-left:1.5rem;
+}
+.input-data{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    margin: 1rem auto;
+    font:1.3rem;
+
+}
+.input-data input{
+    color:green;
+    padding:10px;
+    border:none;
+    border-bottom: 1px solid green;
+    font:1.5rem;
+    background:none;
+    font-weight: bold;
+    outline: none;
+}
+::placeholder {
+  color: green;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: green;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: green;
+}
+.form
+{   
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.head-color{
+    background: white;
+    background-color: white;
+}
+.submit-data{
+    border-radius: 8px;
+    border:3px solid green;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:green;
+    width:40%;
+    text-align: center;
+    justify-content: center;
+    left:20%;
+    background: #7ed321;
+}
+</style>
+</head>
+<body style=" background-color: #7ed321;
+background-image: 
+    /* radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),  */
+    radial-gradient(at 82% 65%, hsl(89.70, 69%, 72%) 0, transparent 55%);
+}">
+    <div class="head-color">
+    <section class="heading head-color">
+        <div class="logo">
+        <img src="{{ url_for('static', filename='main.svg') }}"  >
+    </div>
+    <div class="head">
+        <center>
+     <!-- <div class="search">
+        <input  id="sea" type="text">
+        <a  class="search-btn" href="#" >           
+            <img src="{{ url_for('static', filename='search_icon.svg') }}" height="43.5px" >
+        </a>
+     </div> -->
+    </center>
+                                                                 
+     
+    </div>
+    </section>
+</div>
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+        <a href="#home" class="active">Home</a>
+        
+        
+       
+        <a href="/cropinfo">Crop Information</a>
+        <a href="/irrigation">Modern Irrigation Techniques</a>
+        <a href="/tech">Modern Farming Techniques</a>
+        <a href="/organic">Organic Farming</a>
+        <a href="#">Crop Recommendation</a>
+        <a href="/govt">Government Schemes</a>
+        
+        <a href="#about">Suggestions</a>
+         </div>
+
+   
+    <div class="crop-rem">
+    <div class="left-crop-rem">
+        <div class="crop-rem-para">
+            Crop 
+            <span style="display:block">Recommendation</span>
+            <h3>Recommend the Crop for the Soil upon its Condition</h3>       
+        </div>
+    </div>
+    <div class="right-crop-rem">
+        <h1>Crop Recommendation</h1>
+    <form class="form" action="/predict" method="post">
+        <div class="input-data">
+            Nitrogen Level: <input type="number" name="nitrogen" placeholder="Nitrogen Ratio" >
+        </div>
+        <div class="input-data">
+            Phosphorus Level<input type="number" name="phosphorus" placeholder="Phosphorus Ratio">
+        </div>    
+        <div class="input-data">    
+            Potassium Level<input type="number"  name="potassium" placeholder="Potassium Ratio" >
+        </div>
+        <div class="input-data">
+            Temperature<input type="number" name="temperature" placeholder="Temprature in C">
+        </div>
+        <div class="input-data">
+              Humidity Level<input type="number" name="humidity" placeholder=" Relative HUmidity in %">
+        </div>
+        <div class="input-data">    
+            PH Level<input type="number" name="ph-level" placeholder="PH Value of the Soil">
+        </div>
+        <div class="input-data">    
+            Rainfall Level:<input type="number" name="rainfall" placeholder="Rainfall in mm">
+        </div> 
+    <center>
+     <input type="submit" name="Submit" class="submit-data">
+    </center>
+            
+    </form>
+</div>    
+</div>
+</body>
+</html>
