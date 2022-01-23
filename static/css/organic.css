@@ -1,0 +1,516 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgb(32, 209, 32), rgb(2, 54, 2)), url(static/organic.png); */
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0 75%, 0 0);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;     
+    left: 0;
+    right: 0;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #47e669 0%, #47e669 0%, #47e669 100%);
+    background-color: url('static/organic.png');
+}
+
+.nabvar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .3;
+    z-index: -1;
+    background: linear-gradient(to right, #47e669 0%, #47e669 0%, #47e669 100%);
+}
+
+.nav-item a {
+    color: white!important;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+section.header-section {
+    background-image: url('static/organic-header.png') !important;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-image: url('static/org11.jpg');
+    background-image: url('static/organic-header.png') !important;
+    background: green;
+
+}
+
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-buttons a {
+    border: 2px solid #fff;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.header-buttons a:hover {
+    color: #47e669;
+    background: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+}
+
+
+/* .........................extra div......................*/
+
+.header-extradiv {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.extra-div {
+    background: #fff;
+    border: medium none;
+    padding: 50px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.extra-div h2,
+.servicediv h2 {
+    font-size: 1.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+}
+
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+
+/*//////////////////////Services offers css starts//////////////////////   */
+
+.service-offer {
+    background: #47e669;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.headings h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.names h1 {
+    color: #2e2e2e;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 1rem!important;
+    margin-bottom: 25px;
+}
+
+i {
+    color: #47e669;
+}
+
+
+/*..................service offer css ends ...........*/
+
+
+/*..................award won starts ...........*/
+
+.project-work {
+    margin: 100px;
+}
+
+.project-work h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*..................award won ends ...........*/
+
+
+/*..................price css starts ...........*/
+
+.price-offer {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.price-offer:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #47e669 55%, #fff 0%);
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff!important;
+    padding: 25px 0px!important;
+}
+
+.card-body {
+    padding: 30px 0px!important;
+}
+
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+
+.card-footer {
+    background: #fff!important;
+    padding: 30px 0px!important;
+}
+
+.card-footer a {
+    border: 2px solid #47e669;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #47e669;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.card:hover .card-footer a {
+    color: white;
+    background: #47e669;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    color: #47e669
+}
+
+
+/*..................price css ends ...........*/
+
+.happyclients {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.box:hover {
+    background: #47e669;
+}
+
+.box:hover p {
+    color: #fff;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li {
+    background-color: #47e669!important;
+}
+
+.box a {
+    position: relative;
+}
+
+.box a img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.leftquote {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #47e669 0%, #47e669 0%, #47e669 100%);
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    border-radius: 50%;
+    padding: 11px;
+}
+
+.box h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.contact-us {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contact-us:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #016015 55%, #fff 0%);
+}
+
+.form-button button {
+    border: 2px solid #47e669;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #47e669;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.4;
+    background: transparent;
+}
+
+form:hover .form-button button {
+    background: #fff;
+    color: #47e669;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-button button:hover {
+    color: #47e669;
+}
+
+::placeholder {
+    font-size: 0.85rem;
+}
+
+
+/*................newsletter starts............................*/
+
+.newsletter {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input {
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+    -webkit-border-radius: 100px 0px 0px 100px!important;
+    -moz-border-radius: 100px 0px 0px 100px!important;
+    -ms-border-radius: 100px 0px 0px 100px!important;
+    -o-border-radius: 100px 0px 0px 100px!important;
+}
+
+.input-group-text {
+    color: #fff !important;
+    background: #016015 !important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 130px;
+    min-height: 45px;
+}
+
+
+/*...................newsletter ends...........................*/
+
+
+/*...................footer starts...........................*/
+
+.footersection {
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #016015;
+    position: relative;
+}
+
+.footersection p {
+    color: #fff;
+}
+
+.footersection li a {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footersection h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    background: ##016015;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: #606060;
+}
+
+
+/*...................footer ends...........................*/
+
+.count {
+    padding: 10px;
+}
+
+
+/*******************media query************************ */
+
+@media(max-width:768px) {
+    .nav-item {
+        text-align: center!important;
+    }
+    .price-offer,
+    .happyclients,
+    .contact-us {
+        height: auto;
+        margin-top: 50px;
+    }
+    .card-second {
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+    .contact-us p {
+        padding: 0 50px;
+    }
+    .footersection :nth-child(2) {
+        text-align: left!important;
+    }
+    .footersection {
+        margin: 30px 0;
+    }
+}
